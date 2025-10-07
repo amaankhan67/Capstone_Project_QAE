@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.788" tests="104" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Sehar Khan\eclipse-workspace\smart-city-management\target\test-classes;C:\Users\Sehar Khan\eclipse-workspace\smart-city-management\target\classes;C:\Users\Sehar Khan\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Sehar Khan\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Sehar Khan\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Sehar Khan\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Sehar Khan\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.5.4\maven-surefire-plugin-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-api\3.5.4\surefire-api-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.5.4\surefire-logger-api-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.5.4\surefire-shared-utils-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.5.4\surefire-extensions-api-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.5.4\maven-surefire-common-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-booter\3.5.4\surefire-booter-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.5.4\surefire-extensions-spi-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\Sehar Khan\.m2\repository\org\codehaus\plexus\plexus-java\1.5.0\plexus-java-1.5.0.jar;C:\Users\Sehar Khan\.m2\repository\org\ow2\asm\asm\9.8\asm-9.8.jar;C:\Users\Sehar Khan\.m2\repository\com\thoughtworks\qdox\qdox\2.2.0\qdox-2.2.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="E:\Program Files\Java\bin"/>
+    <property name="sun.java.command" value="C:\Users\Sehar Khan\AppData\Local\Temp\surefire4741800569563477674\surefirebooter-20251007145904914_3.jar C:\Users\Sehar Khan\AppData\Local\Temp\surefire4741800569563477674 2025-10-07T14-59-04_783-jvmRun1 surefire-20251007145904914_1tmp surefire_0-20251007145904914_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Sehar Khan\eclipse-workspace\smart-city-management\target\test-classes;C:\Users\Sehar Khan\eclipse-workspace\smart-city-management\target\classes;C:\Users\Sehar Khan\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\Sehar Khan\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Sehar Khan\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Sehar Khan\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Sehar Khan\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.5.4\maven-surefire-plugin-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-api\3.5.4\surefire-api-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.5.4\surefire-logger-api-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.5.4\surefire-shared-utils-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.5.4\surefire-extensions-api-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.5.4\maven-surefire-common-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-booter\3.5.4\surefire-booter-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.5.4\surefire-extensions-spi-3.5.4.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\Sehar Khan\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\Sehar Khan\.m2\repository\org\codehaus\plexus\plexus-java\1.5.0\plexus-java-1.5.0.jar;C:\Users\Sehar Khan\.m2\repository\org\ow2\asm\asm\9.8\asm-9.8.jar;C:\Users\Sehar Khan\.m2\repository\com\thoughtworks\qdox\qdox\2.2.0\qdox-2.2.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Sehar Khan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="E:\Program Files\Java"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Sehar Khan\eclipse-workspace\smart-city-management"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Sehar Khan\AppData\Local\Temp\surefire4741800569563477674\surefirebooter-20251007145904914_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25+37-LTS-3491"/>
+    <property name="user.name" value="Sehar Khan"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Sehar Khan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\SEHARK~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="C:\Users\Sehar Khan\eclipse-workspace\smart-city-management"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="E:\Program Files\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Node\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\MongoDB\mongosh\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Apache Maven\bin;C:\Users\Sehar Khan\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files\Node\;C:\Program Files\MongoDB\Server\8.0\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25+37-LTS-3491"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testGenerateEmergencyReport" classname="com.city.service.AnalyticsServiceTest" time="0.006"/>
+  <testcase name="testGenerateEmergencyReport_NoData" classname="com.city.service.AnalyticsServiceTest" time="0.0"/>
+  <testcase name="testGenerateTrafficReport" classname="com.city.service.AnalyticsServiceTest" time="0.0"/>
+  <testcase name="testGenerateTrafficReportWithNoData" classname="com.city.service.AnalyticsServiceTest" time="0.001"/>
+  <testcase name="testGenerateUtilityConsumptionReport" classname="com.city.service.AnalyticsServiceTest" time="0.001"/>
+  <testcase name="testGenerateUtilityConsumptionReportWithNoData" classname="com.city.service.AnalyticsServiceTest" time="0.0"/>
+  <testcase name="testGetComplaintStatistics" classname="com.city.service.AnalyticsServiceTest" time="0.001"/>
+  <testcase name="testGetComplaintStatisticsWithNoData" classname="com.city.service.AnalyticsServiceTest" time="0.0"/>
+  <testcase name="testComplaintIdAutoGeneration" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testGetComplaintsByPriority" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testGetComplaintsByPriorityWithNullPriority" classname="com.city.service.ComplaintServiceTest" time="0.002"/>
+  <testcase name="testRegisterComplaint[C009, ELECTRICITY, Flickering lights in building, LOW](1)" classname="com.city.service.ComplaintServiceTest" time="0.008"/>
+  <testcase name="testRegisterComplaint[C010, ROAD, Cracked pavement causing accidents, HIGH](2)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaint[C011, WATER, No water supply since yesterday, MEDIUM](3)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaint[C012, ELECTRICITY, Electrical wiring exposed on pole, LOW](4)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithEmptyCitizenId" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithEmptyDescription" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testRegisterComplaintWithInvalidData[null, ROAD, Description, HIGH](1)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithInvalidData[, ROAD, Description, HIGH](2)" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testRegisterComplaintWithInvalidData[C001, null, Description, HIGH](3)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithInvalidData[C001, ROAD, null, HIGH](4)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithInvalidData[C001, ROAD, , HIGH](5)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithInvalidData[C001, ROAD, Description, null](6)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithInvalidData[NON_EXISTENT, ROAD, Description, HIGH](7)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithNonExistentCitizen" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithNullCategory" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testRegisterComplaintWithNullCitizenId" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testRegisterComplaintWithNullDescription" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testRegisterComplaintWithNullPriority" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testUpdateComplaintStatus[0](1)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[1](2)" classname="com.city.service.ComplaintServiceTest" time="0.001"/>
+  <testcase name="testUpdateComplaintStatus[2](3)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[3](4)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[4](5)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[5](6)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[6](7)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[7](8)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[8](9)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus[9](10)" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatusWithEmptyComplaintId" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatusWithNonExistentComplaint" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatusWithNullStatus" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testUpdateComplaintStatus_NullComplaintId_ThrowsException" classname="com.city.service.ComplaintServiceTest" time="0.0"/>
+  <testcase name="testDispatchEmergencyService" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testDispatchEmergencyServiceForAlreadyResolvedAlert" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testDispatchEmergencyServiceForNonExistentAlert" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testDispatchEmergencyServiceWithEmptyAlertId" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testDispatchEmergencyServiceWithNullAlertId" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testGetActiveEmergencies" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testGetEmergenciesByStatus" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlert" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlertForHighSeverityCapacityExceeded" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlertWithEmptyLocation" classname="com.city.service.EmergencyServiceTest" time="0.001"/>
+  <testcase name="testRaiseEmergencyAlertWithNullLocation" classname="com.city.service.EmergencyServiceTest" time="0.001"/>
+  <testcase name="testRaiseEmergencyAlertWithNullSeverity" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlertWithNullType" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlert_InvalidData_ThrowsException[null, Location, HIGH](1)" classname="com.city.service.EmergencyServiceTest" time="0.003"/>
+  <testcase name="testRaiseEmergencyAlert_InvalidData_ThrowsException[FIRE, null, HIGH](2)" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlert_InvalidData_ThrowsException[FIRE, , HIGH](3)" classname="com.city.service.EmergencyServiceTest" time="0.0"/>
+  <testcase name="testRaiseEmergencyAlert_InvalidData_ThrowsException[FIRE, Location, null](4)" classname="com.city.service.EmergencyServiceTest" time="0.001"/>
+  <testcase name="testHighTrafficAreas" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testHighTrafficAreasForInactiveSensor" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testHighTrafficAreasWithNegativeThreshold" classname="com.city.service.TrafficManagementServiceTest" time="0.001"/>
+  <testcase name="testOptimizeTrafficSignal" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testOptimizeTrafficSignalForInactiveArea" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testOptimizeTrafficSignalWithEmptyString" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testOptimizeTrafficSignalWithNull" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testOptimizeTrafficSignalWithWrongArea" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensity" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensityForInactiveSensor" classname="com.city.service.TrafficManagementServiceTest" time="0.001"/>
+  <testcase name="testUpdateTrafficDensityWithDataProvider[TS003, 40](1)" classname="com.city.service.TrafficManagementServiceTest" time="0.002"/>
+  <testcase name="testUpdateTrafficDensityWithDataProvider[TS008, 80](2)" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensityWithDataProvider[TS010, 20](3)" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensityWithEmptyString" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensityWithNegativeDensity" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensityWithNonExistingSensor" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testUpdateTrafficDensityWithNull" classname="com.city.service.TrafficManagementServiceTest" time="0.0"/>
+  <testcase name="testDetectAnomalies" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testDetectAnomaliesWhereNoAnomalies" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testDetectAnomaliesWithNegativeThreshold" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBill[PROP002, ELECTRICITY](1)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.003"/>
+  <testcase name="testGenerateBill[PROP002, GAS](2)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBill[PROP005, ELECTRICITY](3)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBill[PROP005, WATER](4)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBillNoMeterForUtilityType" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBillWithEmptyPropertyId" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBillWithNonExistentProperty" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBillWithNullPropertyId" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testGenerateBillWithNullUtilityType" classname="com.city.service.UtilityMonitoringServiceTest" time="0.001"/>
+  <testcase name="testRecordUtilityConsumption[UM002, 1000.25](1)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.003"/>
+  <testcase name="testRecordUtilityConsumption[UM004, 407.55](2)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumption[UM007, 821.08](3)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumption[UM011, 381.17](4)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionForInvalidData[null, 1000.0](1)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionForInvalidData[, 1000.0](2)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionForInvalidData[UM001, -100.0](3)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionForInvalidData[UM001, 1000.0](4)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionForInvalidData[INVALID, 1000.0](5)" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionWithEmptyString" classname="com.city.service.UtilityMonitoringServiceTest" time="0.001"/>
+  <testcase name="testRecordUtilityConsumptionWithLessReading" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionWithNegativeReading" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionWithNull" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionWithSameReading" classname="com.city.service.UtilityMonitoringServiceTest" time="0.0"/>
+  <testcase name="testRecordUtilityConsumptionWithWrongMeter" classname="com.city.service.UtilityMonitoringServiceTest" time="0.001"/>
+</testsuite>
