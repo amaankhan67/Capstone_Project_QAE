@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Coffee Cart Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Checkout Tests(failed)">
+    <classes>
+      <class name="tests.CheckoutTest">
+        <methods>
+          <include name="verifyPaymentFailsWithEmptyName"/>
+          <include name="tearDown"/>
+          <include name="verifySuccessfulPayment"/>
+          <include name="verifyFormIsDisplayed"/>
+          <include name="setup"/>
+          <include name="verifyPaymentFailsWithEmptyEmail"/>
+          <include name="verifyPaymentFailsWithBothEmpty"/>
+          <include name="verifyPaymentFailsWithInvalidEmail"/>
+        </methods>
+      </class> <!-- tests.CheckoutTest -->
+    </classes>
+  </test> <!-- Checkout Tests(failed) -->
+  <test thread-count="3" parallel="tests" name="Cart Tests(failed)">
+    <classes>
+      <class name="tests.CartTests">
+        <methods>
+          <include name="verifyDecreasingItemQuantity"/>
+          <include name="verifyIncreasingItemQuantity"/>
+          <include name="verifyInitialEmptyCart"/>
+          <include name="verifyItemIsRemovedWhenQuantityIsZero"/>
+          <include name="setup"/>
+          <include name="verifyItemPresenceInCart"/>
+          <include name="verifyTotalCartPriceWithMultipleItems"/>
+          <include name="verifyCheckoutButtonNavigatesToCheckoutPage"/>
+          <include name="tearDown"/>
+          <include name="verifyMultipleItemsArePresent"/>
+          <include name="verifySingleItemTotalPrice"/>
+        </methods>
+      </class> <!-- tests.CartTests -->
+    </classes>
+  </test> <!-- Cart Tests(failed) -->
+</suite> <!-- Failed suite [Coffee Cart Test Suite] -->

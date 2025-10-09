@@ -1,0 +1,930 @@
+<html>
+<head>
+<title>TestNG:  Edge Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/8</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 07 23:05:37 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4971 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387742822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387742822'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>2</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.setup()'><b>setup</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.tearDown()'><b>tearDown</b><br>Test class: tests.MenuTests</td>
+<td></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.MenuTests.verifyAddingSameItemsIncreaseQuantity()'><b>verifyAddingSameItemsIncreaseQuantity</b><br>Test class: tests.MenuTests<br>Test method: Verify adding same item twice increases item quantity</td>
+<td><div><pre>java.lang.IllegalArgumentException: Item not found: Espresso Con Panna
+	at pages.MenuPage.addItemToCart(MenuPage.java:39)
+	at tests.MenuTests.verifyAddingSameItemsIncreaseQuantity(MenuTests.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20385792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20385792'><pre>java.lang.IllegalArgumentException: Item not found: Espresso Con Panna
+	at pages.MenuPage.addItemToCart(MenuPage.java:39)
+	at tests.MenuTests.verifyAddingSameItemsIncreaseQuantity(MenuTests.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.MenuTests.verifyCorrectPriceDisplayed()'><b>verifyCorrectPriceDisplayed</b><br>Test class: tests.MenuTests<br>Test method: Verify that correct price is displayed for coffee item<br>Parameters: Americano, $7.00</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761145935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace761145935'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyCartIconNavigation()'><b>verifyCartIconNavigation</b><br>Test class: tests.MenuTests<br>Test method: Verify that cart icon navigates to cart page</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1581576727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1581576727'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyCorrectPriceDisplayed()'><b>verifyCorrectPriceDisplayed</b><br>Test class: tests.MenuTests<br>Test method: Verify that correct price is displayed for coffee item<br>Parameters: Espresso, $10.00</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace502182509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace502182509'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyCorrectPriceDisplayed()'><b>verifyCorrectPriceDisplayed</b><br>Test class: tests.MenuTests<br>Test method: Verify that correct price is displayed for coffee item<br>Parameters: Cafe Latte, $16.00</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace362438658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace362438658'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyItemCanBeAddedToCart()'><b>verifyItemCanBeAddedToCart</b><br>Test class: tests.MenuTests<br>Test method: Verify that coffee item can be added to cart</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace611010753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace611010753'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyAllItemsPrices()'><b>verifyAllItemsPrices</b><br>Test class: tests.MenuTests<br>Test method: Verify correct prices of all coffee items</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855822428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855822428'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyInvalidItemsCannotBeAdded()'><b>verifyInvalidItemsCannotBeAdded</b><br>Test class: tests.MenuTests<br>Test method: Verify that invalid item cannot be added to cart</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1618888992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618888992'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+<tr>
+<td title='tests.MenuTests.verifyCorrectPriceDisplayed()'><b>verifyCorrectPriceDisplayed</b><br>Test class: tests.MenuTests<br>Test method: Verify that correct price is displayed for coffee item<br>Parameters: Flat White, $18.00</td>
+<td><div><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1294743827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1294743827'><pre>io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1461)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1477)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1455)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1224)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at managers.DriverManager.initializeDriver(DriverManager.java:54)
+	at managers.DriverManager.getDriver(DriverManager.java:30)
+	at tests.MenuTests.setup(MenuTests.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.lang.IllegalArgumentException: URI is not absolute
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:308)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:138)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1482)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1312)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1218)
+	... 31 more
+Caused by: java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.of(URL.java:862)
+	at java.base/java.net.URI.toURL(URI.java:1172)
+	at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriversFromXml(EdgeDriverManager.java:300)
+	... 35 more
+</pre></div></td>
+<td>0</td>
+<td>tests.MenuTests@15e0fe05</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <!-- Console Appender for real-time viewing -->
+        <Console name="Console" target="SYSTEM_OUT">
+        <!-- CRUCIAL: Add a LevelRangeFilter to restrict console output -->
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %c{1.} - %msg%n"/>
+        </Console>
+
+        <!-- CRUCIAL: File Appender to log all data to a single file -->
+        <File name="FileLogger" 
+              fileName="src/main/output/logs/test_log.log"
+              append="false" > <!-- This ensures the file is overwritten on every startup -->
+              
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %c{1.} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- The root logger directs all logs (INFO level and above) to both the Console and the File -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>

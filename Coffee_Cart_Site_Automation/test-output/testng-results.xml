@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-09T23:28:45 IST" name="Default suite" finished-at="2025-10-09T23:29:45 IST" duration-ms="60021">
+    <groups>
+    </groups>
+    <test started-at="2025-10-09T23:28:45 IST" name="Default test" finished-at="2025-10-09T23:29:45 IST" duration-ms="60021">
+      <class name="tests.CheckoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:28:45 IST" name="setup" finished-at="2025-10-09T23:28:48 IST" duration-ms="3572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyFormIsDisplayed()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:28:48 IST" name="verifyFormIsDisplayed" description="Verify that the checkout form is displayed and ready" finished-at="2025-10-09T23:28:48 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFormIsDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:28:48 IST" name="tearDown" finished-at="2025-10-09T23:28:49 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:28:49 IST" name="setup" finished-at="2025-10-09T23:28:51 IST" duration-ms="1955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPaymentFailsWithBothEmpty()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:28:51 IST" name="verifyPaymentFailsWithBothEmpty" description="Verify payment failure when both Name and Email fields are empty" finished-at="2025-10-09T23:29:01 IST" duration-ms="10482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentFailsWithBothEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:01 IST" name="tearDown" finished-at="2025-10-09T23:29:01 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:01 IST" name="setup" finished-at="2025-10-09T23:29:04 IST" duration-ms="2531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPaymentFailsWithEmptyEmail()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:04 IST" name="verifyPaymentFailsWithEmptyEmail" description="Verify payment failure when Email field is empty" finished-at="2025-10-09T23:29:15 IST" duration-ms="10719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentFailsWithEmptyEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:15 IST" name="tearDown" finished-at="2025-10-09T23:29:15 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:15 IST" name="setup" finished-at="2025-10-09T23:29:18 IST" duration-ms="2784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPaymentFailsWithEmptyName()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:18 IST" name="verifyPaymentFailsWithEmptyName" description="Verify payment failure when Name field is empty" finished-at="2025-10-09T23:29:28 IST" duration-ms="10513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentFailsWithEmptyName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:28 IST" name="tearDown" finished-at="2025-10-09T23:29:28 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:28 IST" name="setup" finished-at="2025-10-09T23:29:30 IST" duration-ms="2036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPaymentFailsWithInvalidEmail()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:30 IST" name="verifyPaymentFailsWithInvalidEmail" description="Verify payment failure with invalid Email format" finished-at="2025-10-09T23:29:41 IST" duration-ms="10616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentFailsWithInvalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:41 IST" name="tearDown" finished-at="2025-10-09T23:29:41 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:41 IST" name="setup" finished-at="2025-10-09T23:29:43 IST" duration-ms="2291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySuccessfulPayment()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:43 IST" name="verifySuccessfulPayment" description="Verify successful payment submission with valid Name and Email" finished-at="2025-10-09T23:29:44 IST" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulPayment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CheckoutTest@6c6cb480]" started-at="2025-10-09T23:29:44 IST" name="tearDown" finished-at="2025-10-09T23:29:45 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CheckoutTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

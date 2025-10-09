@@ -1,0 +1,125 @@
+2025-10-09 23:28:48.220 [main] INFO  p.MenuPage - MenuPage Object created Successfully!
+2025-10-09 23:28:48.224 [main] INFO  p.CartPage - CartPage Object created successfully.
+2025-10-09 23:28:48.226 [main] INFO  p.Checkout - Checkout Page Object created successfully.
+2025-10-09 23:28:48.226 [main] INFO  p.MenuPage - Attempting to add Flat White to cart.
+2025-10-09 23:28:48.416 [main] INFO  p.MenuPage - Attempting to hover and click on Flat White
+2025-10-09 23:28:48.556 [main] INFO  p.MenuPage - Successfully hovered and clicked on Flat White
+2025-10-09 23:28:48.556 [main] INFO  p.MenuPage - Attempting to click on Cart Icon
+2025-10-09 23:28:48.678 [main] INFO  p.MenuPage - Successfully clicked on Cart Icon
+2025-10-09 23:28:48.678 [main] INFO  p.CartPage - Attempting to click on Checkout Button
+2025-10-09 23:28:48.788 [main] INFO  p.CartPage - Successfully clicked on Checkout Button
+2025-10-09 23:28:48.788 [main] INFO  t.CheckoutTest - Test Environment Setup Complete
+2025-10-09 23:28:48.833 [main] INFO  p.Checkout - Checkout Page Displayed!!
+2025-10-09 23:28:48.835 [main] INFO  t.CheckoutTest - Test Passed: Checkout form is displayed as expected
+2025-10-09 23:28:49.086 [main] INFO  t.CheckoutTest - WebDriver has been closed.
+2025-10-09 23:28:50.503 [main] INFO  p.MenuPage - MenuPage Object created Successfully!
+2025-10-09 23:28:50.503 [main] INFO  p.CartPage - CartPage Object created successfully.
+2025-10-09 23:28:50.504 [main] INFO  p.Checkout - Checkout Page Object created successfully.
+2025-10-09 23:28:50.504 [main] INFO  p.MenuPage - Attempting to add Flat White to cart.
+2025-10-09 23:28:50.682 [main] INFO  p.MenuPage - Attempting to hover and click on Flat White
+2025-10-09 23:28:50.825 [main] INFO  p.MenuPage - Successfully hovered and clicked on Flat White
+2025-10-09 23:28:50.826 [main] INFO  p.MenuPage - Attempting to click on Cart Icon
+2025-10-09 23:28:50.940 [main] INFO  p.MenuPage - Successfully clicked on Cart Icon
+2025-10-09 23:28:50.940 [main] INFO  p.CartPage - Attempting to click on Checkout Button
+2025-10-09 23:28:51.042 [main] INFO  p.CartPage - Successfully clicked on Checkout Button
+2025-10-09 23:28:51.042 [main] INFO  t.CheckoutTest - Test Environment Setup Complete
+2025-10-09 23:28:51.044 [main] INFO  p.Checkout - Attempting to fill out the checkout form.
+2025-10-09 23:28:51.045 [main] INFO  p.Checkout - Attempting to type  into Name
+2025-10-09 23:28:51.157 [main] INFO  p.Checkout - Successfully typed  into Name
+2025-10-09 23:28:51.157 [main] INFO  p.Checkout - Attempting to type  into Email
+2025-10-09 23:28:51.266 [main] INFO  p.Checkout - Successfully typed  into Email
+2025-10-09 23:28:51.267 [main] INFO  p.Checkout - Successfully filled out the form.
+2025-10-09 23:28:51.267 [main] INFO  p.Checkout - Attempting to click on Submit Button
+2025-10-09 23:28:51.380 [main] INFO  p.Checkout - Successfully clicked on Submit Button
+2025-10-09 23:29:01.525 [main] WARN  p.Checkout - Success Message is not Displayed
+2025-10-09 23:29:01.525 [main] INFO  t.CheckoutTest - Test passed: Payment correctly prevented submission with both fields empty
+2025-10-09 23:29:01.772 [main] INFO  t.CheckoutTest - WebDriver has been closed.
+2025-10-09 23:29:03.192 [main] INFO  p.MenuPage - MenuPage Object created Successfully!
+2025-10-09 23:29:03.193 [main] INFO  p.CartPage - CartPage Object created successfully.
+2025-10-09 23:29:03.193 [main] INFO  p.Checkout - Checkout Page Object created successfully.
+2025-10-09 23:29:03.193 [main] INFO  p.MenuPage - Attempting to add Flat White to cart.
+2025-10-09 23:29:03.874 [main] INFO  p.MenuPage - Attempting to hover and click on Flat White
+2025-10-09 23:29:04.012 [main] INFO  p.MenuPage - Successfully hovered and clicked on Flat White
+2025-10-09 23:29:04.012 [main] INFO  p.MenuPage - Attempting to click on Cart Icon
+2025-10-09 23:29:04.140 [main] INFO  p.MenuPage - Successfully clicked on Cart Icon
+2025-10-09 23:29:04.140 [main] INFO  p.CartPage - Attempting to click on Checkout Button
+2025-10-09 23:29:04.303 [main] INFO  p.CartPage - Successfully clicked on Checkout Button
+2025-10-09 23:29:04.304 [main] INFO  t.CheckoutTest - Test Environment Setup Complete
+2025-10-09 23:29:04.306 [main] INFO  p.Checkout - Attempting to fill out the checkout form.
+2025-10-09 23:29:04.306 [main] INFO  p.Checkout - Attempting to type Amaan Khan into Name
+2025-10-09 23:29:04.444 [main] INFO  p.Checkout - Successfully typed Amaan Khan into Name
+2025-10-09 23:29:04.445 [main] INFO  p.Checkout - Attempting to type  into Email
+2025-10-09 23:29:04.652 [main] INFO  p.Checkout - Successfully typed  into Email
+2025-10-09 23:29:04.652 [main] INFO  p.Checkout - Successfully filled out the form.
+2025-10-09 23:29:04.652 [main] INFO  p.Checkout - Attempting to click on Submit Button
+2025-10-09 23:29:04.856 [main] INFO  p.Checkout - Successfully clicked on Submit Button
+2025-10-09 23:29:15.023 [main] WARN  p.Checkout - Success Message is not Displayed
+2025-10-09 23:29:15.023 [main] INFO  t.CheckoutTest - Test Passed: Payment correctly prevented submission with empty email
+2025-10-09 23:29:15.283 [main] INFO  t.CheckoutTest - WebDriver has been closed.
+2025-10-09 23:29:16.787 [main] INFO  p.MenuPage - MenuPage Object created Successfully!
+2025-10-09 23:29:16.787 [main] INFO  p.CartPage - CartPage Object created successfully.
+2025-10-09 23:29:16.788 [main] INFO  p.Checkout - Checkout Page Object created successfully.
+2025-10-09 23:29:16.788 [main] INFO  p.MenuPage - Attempting to add Flat White to cart.
+2025-10-09 23:29:17.622 [main] INFO  p.MenuPage - Attempting to hover and click on Flat White
+2025-10-09 23:29:17.772 [main] INFO  p.MenuPage - Successfully hovered and clicked on Flat White
+2025-10-09 23:29:17.772 [main] INFO  p.MenuPage - Attempting to click on Cart Icon
+2025-10-09 23:29:17.924 [main] INFO  p.MenuPage - Successfully clicked on Cart Icon
+2025-10-09 23:29:17.924 [main] INFO  p.CartPage - Attempting to click on Checkout Button
+2025-10-09 23:29:18.067 [main] INFO  p.CartPage - Successfully clicked on Checkout Button
+2025-10-09 23:29:18.067 [main] INFO  t.CheckoutTest - Test Environment Setup Complete
+2025-10-09 23:29:18.069 [main] INFO  p.Checkout - Attempting to fill out the checkout form.
+2025-10-09 23:29:18.069 [main] INFO  p.Checkout - Attempting to type  into Name
+2025-10-09 23:29:18.186 [main] INFO  p.Checkout - Successfully typed  into Name
+2025-10-09 23:29:18.186 [main] INFO  p.Checkout - Attempting to type amaankhan@example.com into Email
+2025-10-09 23:29:18.323 [main] INFO  p.Checkout - Successfully typed amaankhan@example.com into Email
+2025-10-09 23:29:18.323 [main] INFO  p.Checkout - Successfully filled out the form.
+2025-10-09 23:29:18.323 [main] INFO  p.Checkout - Attempting to click on Submit Button
+2025-10-09 23:29:18.420 [main] INFO  p.Checkout - Successfully clicked on Submit Button
+2025-10-09 23:29:28.581 [main] WARN  p.Checkout - Success Message is not Displayed
+2025-10-09 23:29:28.581 [main] INFO  t.CheckoutTest - Test Passed: Payment correctly prevented submission with empty name
+2025-10-09 23:29:28.810 [main] INFO  t.CheckoutTest - WebDriver has been closed.
+2025-10-09 23:29:30.385 [main] INFO  p.MenuPage - MenuPage Object created Successfully!
+2025-10-09 23:29:30.385 [main] INFO  p.CartPage - CartPage Object created successfully.
+2025-10-09 23:29:30.385 [main] INFO  p.Checkout - Checkout Page Object created successfully.
+2025-10-09 23:29:30.385 [main] INFO  p.MenuPage - Attempting to add Flat White to cart.
+2025-10-09 23:29:30.516 [main] INFO  p.MenuPage - Attempting to hover and click on Flat White
+2025-10-09 23:29:30.643 [main] INFO  p.MenuPage - Successfully hovered and clicked on Flat White
+2025-10-09 23:29:30.643 [main] INFO  p.MenuPage - Attempting to click on Cart Icon
+2025-10-09 23:29:30.767 [main] INFO  p.MenuPage - Successfully clicked on Cart Icon
+2025-10-09 23:29:30.767 [main] INFO  p.CartPage - Attempting to click on Checkout Button
+2025-10-09 23:29:30.847 [main] INFO  p.CartPage - Successfully clicked on Checkout Button
+2025-10-09 23:29:30.847 [main] INFO  t.CheckoutTest - Test Environment Setup Complete
+2025-10-09 23:29:30.850 [main] INFO  p.Checkout - Attempting to fill out the checkout form.
+2025-10-09 23:29:30.851 [main] INFO  p.Checkout - Attempting to type Amaan Khan into Name
+2025-10-09 23:29:30.970 [main] INFO  p.Checkout - Successfully typed Amaan Khan into Name
+2025-10-09 23:29:30.970 [main] INFO  p.Checkout - Attempting to type invalid-email-no-at-sign.com into Email
+2025-10-09 23:29:31.116 [main] INFO  p.Checkout - Successfully typed invalid-email-no-at-sign.com into Email
+2025-10-09 23:29:31.116 [main] INFO  p.Checkout - Successfully filled out the form.
+2025-10-09 23:29:31.116 [main] INFO  p.Checkout - Attempting to click on Submit Button
+2025-10-09 23:29:31.270 [main] INFO  p.Checkout - Successfully clicked on Submit Button
+2025-10-09 23:29:41.463 [main] WARN  p.Checkout - Success Message is not Displayed
+2025-10-09 23:29:41.464 [main] INFO  t.CheckoutTest - Test Passed: Payment correctly prevented submission with invalid email
+2025-10-09 23:29:41.696 [main] INFO  t.CheckoutTest - WebDriver has been closed.
+2025-10-09 23:29:43.504 [main] INFO  p.MenuPage - MenuPage Object created Successfully!
+2025-10-09 23:29:43.505 [main] INFO  p.CartPage - CartPage Object created successfully.
+2025-10-09 23:29:43.505 [main] INFO  p.Checkout - Checkout Page Object created successfully.
+2025-10-09 23:29:43.505 [main] INFO  p.MenuPage - Attempting to add Flat White to cart.
+2025-10-09 23:29:43.661 [main] INFO  p.MenuPage - Attempting to hover and click on Flat White
+2025-10-09 23:29:43.798 [main] INFO  p.MenuPage - Successfully hovered and clicked on Flat White
+2025-10-09 23:29:43.799 [main] INFO  p.MenuPage - Attempting to click on Cart Icon
+2025-10-09 23:29:43.904 [main] INFO  p.MenuPage - Successfully clicked on Cart Icon
+2025-10-09 23:29:43.904 [main] INFO  p.CartPage - Attempting to click on Checkout Button
+2025-10-09 23:29:43.990 [main] INFO  p.CartPage - Successfully clicked on Checkout Button
+2025-10-09 23:29:43.990 [main] INFO  t.CheckoutTest - Test Environment Setup Complete
+2025-10-09 23:29:44.013 [main] INFO  p.Checkout - Checkout Page Displayed!!
+2025-10-09 23:29:44.013 [main] INFO  p.Checkout - Attempting to fill out the checkout form.
+2025-10-09 23:29:44.013 [main] INFO  p.Checkout - Attempting to type Amaan Khan into Name
+2025-10-09 23:29:44.130 [main] INFO  p.Checkout - Successfully typed Amaan Khan into Name
+2025-10-09 23:29:44.130 [main] INFO  p.Checkout - Attempting to type amaankhan@example.com into Email
+2025-10-09 23:29:44.290 [main] INFO  p.Checkout - Successfully typed amaankhan@example.com into Email
+2025-10-09 23:29:44.291 [main] INFO  p.Checkout - Successfully filled out the form.
+2025-10-09 23:29:44.291 [main] INFO  p.Checkout - Attempting to click on Submit Button
+2025-10-09 23:29:44.430 [main] INFO  p.Checkout - Successfully clicked on Submit Button
+2025-10-09 23:29:44.985 [main] INFO  p.Checkout - Success Message Displayed!!
+2025-10-09 23:29:44.985 [main] INFO  t.CheckoutTest - Test Passed: Payment submitted successfully
+2025-10-09 23:29:45.209 [main] INFO  t.CheckoutTest - WebDriver has been closed.
